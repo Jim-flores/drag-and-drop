@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  user-select: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #1a1818;
   font-family: Arial, Helvetica, sans-serif;
+}
+.box-desappear {
+  display: none;
+}
+.box-appear {
+  flex: none
+}
+.box-appear:hover .box-desappear {
+  display: flex
+}
+.t-color {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text
 }

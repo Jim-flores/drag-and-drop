@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import Scroll from "tailwind-scrollbar";
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [Scroll],
 } satisfies Config;
